@@ -19,7 +19,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = [".gg/YREGhpdGbJ","Watching T2D"];
+const statusMessages = [" We are currently experiencing a problem. Please check announcements for more information. "];
 
 
 let currentIndex = 0;
