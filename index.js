@@ -19,7 +19,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = [" We are currently experiencing a problem. Please check announcements for more information. "];
+const statusMessages = ["Thank you for your service, OG BOT. "];
 
 
 let currentIndex = 0;
@@ -43,8 +43,8 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Custom}],
-    status: 'dnd',
+    activities: [{ name: currentStatus, type: ActivityType.Listening}],
+    status: 'idle',
   });
 
   
